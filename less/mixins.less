@@ -1,8 +1,8 @@
 // Mixins Here
 
 .btn {
-    height: @height;
-    width: @width;
+    height: 40px;
+    width: 100px;
     border: 1px solid black;
     font-size: 1.8rem;
     color: white;
@@ -10,4 +10,15 @@
     padding: 10px;
     border-radius: 10px;
     .displayflex(center, center);   
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(@btn-bg-color, 60%);
+        color: @river-bend;
+      }
+
+    @media @phone {
+      height: 70px;
+      width: 100%;
+    }  
 }
