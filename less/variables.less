@@ -1,5 +1,11 @@
 // Variables
 
+.displayflex(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
 // Color pointers
 @nav-bg: @wild-sand;
 @nav-font: @river-bend;
@@ -24,3 +30,4 @@
 @border-real: #dee2e6;
 
 // Mobile var
+@phone: ~"(max-width: 500px)";
